@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "usb-claim-audit"
+version = "0.1.0"
+description = "Offline static audit of documented wired device claims"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "usb-claim-audit contributors"}]
+
+[project.scripts]
+usb-claim-audit = "usb_claim_audit.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["usb_claim_audit*"]
